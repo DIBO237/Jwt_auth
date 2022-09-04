@@ -16,7 +16,7 @@ const auth = (req,res,next)=>{
       if (err !== null) {
         res.status(400).json(failed_response(400,"You must login first",false));
       }
-      req.user = user
+      req.user = user.email
       next()
     })
 
