@@ -28,15 +28,12 @@ console.log(process.env.PRIVATE_KEY)
 app.use(cors());
 app.use(express.json());
 
-user = {
-  email: "dibya.dey@gmail.com",
-  password: "9830",
-};
+
 
 // INITIAL ROUTE
 app.get("/", (req, res) => {
   res.status(200).json({
-    name: "dibya",
+    msg: "server is working",
   });
 });
 
