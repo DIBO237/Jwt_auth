@@ -1,4 +1,4 @@
 # Jwt_auth
 
 ## npm start
-## npm devstart
+## npm run devstart
